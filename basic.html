@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pelangi Aqiqah Bogor</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: 'Poppins', sans-serif;
+      }
+
+      .container-custom {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      .navbar-blur {
+        backdrop-filter: blur(10px);
+        background: rgba(255, 255, 255, 0.7);
+      }
+
+      .reveal {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: all 0.8s ease;
+      }
+
+      .reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+  <body class="bg-amber-50 text-gray-800 scroll-smooth">
+    <!-- NAVBAR -->
+    <header class="fixed w-full top-0 z-50 navbar-blur shadow-sm">
+      <div class="container-custom flex justify-between items-center py-4">
+        <div class="flex items-center gap-2 text-xl font-bold text-orange-500">
+          <i class="fa-solid fa-rainbow"></i>
+          Pelangi Aqiqah
+        </div>
+
+        <nav class="hidden md:flex gap-6 text-sm">
+          <a href="#home" class="hover:text-orange-500">Home</a>
+          <a href="#layanan" class="hover:text-orange-500">Layanan</a>
+          <a href="#menu" class="hover:text-orange-500">Paket</a>
+          <a href="#kontak" class="hover:text-orange-500">Kontak</a>
+        </nav>
+
+        <button id="menuBtn" class="md:hidden text-xl">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+      <!-- MOBILE MENU -->
+      <div id="mobileMenu" class="hidden flex-col bg-white px-6 pb-4 md:hidden">
+        <a href="#home" class="py-2">Home</a>
+        <a href="#layanan" class="py-2">Layanan</a>
+        <a href="#menu" class="py-2">Paket</a>
+        <a href="#kontak" class="py-2">Kontak</a>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="relative h-[90vh] flex items-center">
+      <img
+        src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092"
+        class="absolute w-full h-full object-cover"
+      />
+      <div class="absolute inset-0 bg-black/50"></div>
+
+      <div class="relative z-10 container-custom text-white reveal">
+        <h1 class="text-4xl md:text-5xl font-bold">
+          Aqiqah Mudah & Sesuai Syariah
+        </h1>
+        <p class="mt-4">Layanan aqiqah terpercaya di Bogor, halal & praktis.</p>
+        <button
+          class="mt-6 bg-orange-500 px-6 py-3 rounded-full hover:bg-orange-600 transition"
+        >
+          Pesan Sekarang
+        </button>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section
+      id="layanan"
+      class="py-12 container-custom grid md:grid-cols-4 gap-6 text-center"
+    >
+      <div class="reveal hover:scale-105 transition">
+        <i class="fa-solid fa-check text-orange-500"></i>
+        <p>Halal Syariah</p>
+      </div>
+      <div class="reveal hover:scale-105 transition">
+        <i class="fa-solid fa-utensils text-orange-500"></i>
+        <p>Masakan Lezat</p>
+      </div>
+      <div class="reveal hover:scale-105 transition">
+        <i class="fa-solid fa-truck text-orange-500"></i>
+        <p>Gratis Antar</p>
+      </div>
+      <div class="reveal hover:scale-105 transition">
+        <i class="fa-solid fa-star text-orange-500"></i>
+        <p>Terpercaya</p>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section id="menu" class="container-custom py-16">
+      <h2 class="text-3xl font-bold text-center mb-10 reveal">Paket Aqiqah</h2>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div
+          class="bg-white rounded-2xl shadow reveal hover:-translate-y-2 transition"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1604908176997-4318b5f4b8b0"
+            class="rounded-t-2xl h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="font-semibold">Paket Standar</h3>
+            <p class="text-sm">Sate & gulai</p>
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-2xl shadow reveal hover:-translate-y-2 transition"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1"
+            class="rounded-t-2xl h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="font-semibold">Paket Premium</h3>
+            <p class="text-sm">Nasi box lengkap</p>
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-2xl shadow reveal hover:-translate-y-2 transition"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1544025162-d76694265947"
+            class="rounded-t-2xl h-48 w-full object-cover"
+          />
+          <div class="p-4">
+            <h3 class="font-semibold">Paket Lengkap</h3>
+            <p class="text-sm">Full catering</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section
+      id="kontak"
+      class="bg-orange-500 text-white text-center py-16 reveal"
+    >
+      <h2 class="text-3xl font-bold">Siap Aqiqah Tanpa Ribet?</h2>
+      <button class="mt-6 bg-white text-orange-500 px-6 py-3 rounded-full">
+        Hubungi Kami
+      </button>
+    </section>
+
+    <footer class="text-center py-6 text-sm">© 2026 Pelangi Aqiqah</footer>
+
+    <script>
+      const menuBtn = document.getElementById('menuBtn');
+      const mobileMenu = document.getElementById('mobileMenu');
+
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      const reveals = document.querySelectorAll('.reveal');
+      window.addEventListener('scroll', () => {
+        reveals.forEach((el) => {
+          const windowHeight = window.innerHeight;
+          const elementTop = el.getBoundingClientRect().top;
+          if (elementTop < windowHeight - 100) {
+            el.classList.add('active');
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

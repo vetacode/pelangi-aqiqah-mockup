@@ -1,0 +1,997 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pelangi Aqiqah - Jasa Katering Aqiqah Terlengkap di Bogor</title>
+    <meta
+      name="description"
+      content="Pelangi Aqiqah - Jasa Katering Aqiqah dan Event Muslim dengan menu terlengkap di Kota Bogor. Melayani area Jabodetabek."
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          container: {
+            center: true,
+            padding: '2rem',
+            screens: { '2xl': '1400px' },
+          },
+          extend: {
+            fontFamily: {
+              display: ['"Playfair Display"', 'serif'],
+              sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            },
+            colors: {
+              warm: {
+                cream: '#faf5ef',
+                orange: '#e06b20',
+                'orange-light': '#f09040',
+                brown: '#3d2e1e',
+                gold: '#d4952e',
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        background: #fdfaf7;
+        color: #2d2016;
+      }
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-family: 'Playfair Display', serif;
+      }
+      .bg-hero-overlay {
+        background: linear-gradient(
+          to right,
+          rgba(30, 20, 10, 0.78) 0%,
+          rgba(30, 20, 10, 0.35) 60%,
+          transparent 100%
+        );
+      }
+      .bg-warm-gradient {
+        background: linear-gradient(135deg, #faf5ef 0%, #fff 100%);
+      }
+      .section-padding {
+        padding: 4rem 1rem;
+      }
+      @media (min-width: 768px) {
+        .section-padding {
+          padding: 6rem 2rem;
+        }
+      }
+      .text-gradient {
+        background: linear-gradient(135deg, #e06b20, #d4952e);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      @keyframes fade-in-up {
+        0% {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-fade-in-up {
+        animation: fade-in-up 0.7s ease-out forwards;
+      }
+      @keyframes fade-in {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      .animate-fade-in {
+        animation: fade-in 0.5s ease-out forwards;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen">
+    <!-- Navbar -->
+    <nav
+      id="navbar"
+      class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-sm"
+    >
+      <div
+        class="container mx-auto flex items-center justify-between h-16 md:h-20 px-4"
+      >
+        <a
+          href="#home"
+          class="flex items-center gap-2 text-xl font-bold font-display text-warm-orange"
+        >
+          <i class="fas fa-cloud-sun text-2xl"></i> Pelangi Aqiqah
+        </a>
+        <ul class="hidden md:flex items-center gap-8">
+          <li>
+            <a
+              href="#home"
+              class="text-sm font-medium text-gray-700 hover:text-warm-orange transition-colors"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#about"
+              class="text-sm font-medium text-gray-700 hover:text-warm-orange transition-colors"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#layanan"
+              class="text-sm font-medium text-gray-700 hover:text-warm-orange transition-colors"
+              >Layanan</a
+            >
+          </li>
+          <li>
+            <a
+              href="#menu"
+              class="text-sm font-medium text-gray-700 hover:text-warm-orange transition-colors"
+              >Menu</a
+            >
+          </li>
+          <li>
+            <a
+              href="#testimoni"
+              class="text-sm font-medium text-gray-700 hover:text-warm-orange transition-colors"
+              >Testimoni</a
+            >
+          </li>
+          <li>
+            <a
+              href="#kontak"
+              class="text-sm font-medium text-gray-700 hover:text-warm-orange transition-colors"
+              >Kontak</a
+            >
+          </li>
+        </ul>
+        <a
+          href="https://api.whatsapp.com/send?phone=6285606060505&text=Assalamualaikum%20Saya%20dapat%20info%20dari%20Website%20pelangiaqiqah"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hidden md:inline-flex items-center gap-2 bg-warm-orange text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:opacity-90 transition-opacity"
+        >
+          Pesan Sekarang
+        </a>
+        <button
+          onclick="toggleMenu()"
+          class="md:hidden p-2 text-gray-800"
+          aria-label="Menu"
+        >
+          <i id="menu-icon" class="fas fa-bars text-xl"></i>
+        </button>
+      </div>
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white border-t border-gray-200 animate-fade-in"
+      >
+        <ul class="flex flex-col py-4 px-4 gap-1">
+          <li>
+            <a
+              href="#home"
+              onclick="toggleMenu()"
+              class="block py-2.5 px-3 rounded-lg text-sm font-medium text-gray-700 hover:bg-orange-50 hover:text-warm-orange"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#about"
+              onclick="toggleMenu()"
+              class="block py-2.5 px-3 rounded-lg text-sm font-medium text-gray-700 hover:bg-orange-50 hover:text-warm-orange"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#layanan"
+              onclick="toggleMenu()"
+              class="block py-2.5 px-3 rounded-lg text-sm font-medium text-gray-700 hover:bg-orange-50 hover:text-warm-orange"
+              >Layanan</a
+            >
+          </li>
+          <li>
+            <a
+              href="#menu"
+              onclick="toggleMenu()"
+              class="block py-2.5 px-3 rounded-lg text-sm font-medium text-gray-700 hover:bg-orange-50 hover:text-warm-orange"
+              >Menu</a
+            >
+          </li>
+          <li>
+            <a
+              href="#testimoni"
+              onclick="toggleMenu()"
+              class="block py-2.5 px-3 rounded-lg text-sm font-medium text-gray-700 hover:bg-orange-50 hover:text-warm-orange"
+              >Testimoni</a
+            >
+          </li>
+          <li>
+            <a
+              href="#kontak"
+              onclick="toggleMenu()"
+              class="block py-2.5 px-3 rounded-lg text-sm font-medium text-gray-700 hover:bg-orange-50 hover:text-warm-orange"
+              >Kontak</a
+            >
+          </li>
+          <li class="mt-2">
+            <a
+              href="https://api.whatsapp.com/send?phone=6285606060505&text=Assalamualaikum%20Saya%20dapat%20info%20dari%20Website%20pelangiaqiqah"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="block text-center bg-warm-orange text-white px-5 py-2.5 rounded-full text-sm font-semibold"
+              >Pesan Sekarang</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="relative min-h-screen flex items-center overflow-hidden"
+    >
+      <img
+        src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=1920&q=80"
+        alt="Pelangi Aqiqah"
+        class="absolute inset-0 w-full h-full object-cover"
+      />
+      <div class="absolute inset-0 bg-hero-overlay"></div>
+      <div class="relative z-10 container mx-auto px-4 md:px-8 pt-20">
+        <div class="max-w-2xl space-y-6 animate-fade-in-up">
+          <h1
+            class="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white"
+          >
+            Jadikan Moment Spesial Si Kecil, Moment Yang Tak Terlupakan
+          </h1>
+          <p class="text-lg md:text-xl text-white/80 max-w-lg">
+            Rayakan aqiqah si Kecil bersama Jasa Katering Aqiqah dengan Menu
+            Terlengkap di Kota Bogor.
+          </p>
+          <div class="flex flex-wrap gap-4 pt-2">
+            <a
+              href="https://api.whatsapp.com/send?phone=6285606060505&text=Assalamualaikum%20Saya%20dapat%20info%20dari%20Website%20pelangiaqiqah"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 bg-warm-orange text-white px-8 py-3.5 rounded-full text-base font-semibold hover:opacity-90 transition-opacity shadow-lg"
+            >
+              <i class="fab fa-whatsapp text-lg"></i> Pesan Sekarang
+            </a>
+            <a
+              href="#layanan"
+              class="inline-flex items-center gap-2 border-2 border-white/30 text-white px-8 py-3.5 rounded-full text-base font-semibold hover:bg-white/10 transition-colors"
+            >
+              Lihat Layanan
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+        <i class="fas fa-chevron-down text-white/60 text-xl"></i>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding bg-warm-gradient">
+      <div class="container mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+            <img
+              src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80"
+              alt="Hidangan Aqiqah Pelangi"
+              class="w-full h-80 md:h-[450px] object-cover"
+              loading="lazy"
+            />
+            <div
+              class="absolute bottom-4 left-4 bg-warm-orange text-white px-4 py-2 rounded-lg text-sm font-semibold"
+            >
+              10+ Tahun Pengalaman
+            </div>
+          </div>
+          <div class="space-y-6">
+            <span
+              class="text-warm-orange font-semibold text-sm uppercase tracking-widest"
+              >Tentang Kami</span
+            >
+            <h2
+              class="font-display text-3xl md:text-4xl font-bold leading-tight"
+            >
+              Pelangi Aqiqah
+            </h2>
+            <p class="text-gray-600 leading-relaxed">
+              Pelangi Aqiqah adalah Jasa Katering Aqiqah dan Event Muslim dengan
+              menu terlengkap yang akan menjadikan moment spesial si kecil
+              menjadi moment yang tak terlupakan. Kami siap menjadi vendor
+              pilihan terbaik acara Aqiqah buah hati Ayah dan Bunda.
+            </p>
+            <p class="text-gray-600 leading-relaxed">
+              Berlokasi di Kota Bogor, kami melayani area Jabodetabek dengan
+              layanan profesional, makanan berkualitas, dan harga terjangkau.
+            </p>
+            <a
+              href="#layanan"
+              class="inline-flex items-center gap-2 text-warm-orange font-semibold hover:underline"
+            >
+              Lihat Layanan Kami <i class="fas fa-arrow-right text-sm"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section class="section-padding bg-white">
+      <div class="container mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-14">
+          <span
+            class="text-warm-orange font-semibold text-sm uppercase tracking-widest"
+            >Kenapa Kami</span
+          >
+          <h2 class="font-display text-3xl md:text-4xl font-bold mt-3">
+            Kenapa Pelangi Aqiqah?
+          </h2>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div
+            class="group bg-orange-50/50 hover:bg-warm-orange hover:text-white rounded-2xl p-6 text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+          >
+            <div
+              class="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-warm-orange/10 text-warm-orange group-hover:bg-white/20 group-hover:text-white mb-4 transition-colors"
+            >
+              <i class="fas fa-shield-alt text-2xl"></i>
+            </div>
+            <h3 class="font-semibold text-sm md:text-base mb-2">
+              Animal Welfare
+            </h3>
+            <p class="text-xs md:text-sm opacity-70 leading-relaxed">
+              Pemeliharaan hewan menganut prinsip kesejahteraan hewan
+            </p>
+          </div>
+          <div
+            class="group bg-orange-50/50 hover:bg-warm-orange hover:text-white rounded-2xl p-6 text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+          >
+            <div
+              class="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-warm-orange/10 text-warm-orange group-hover:bg-white/20 group-hover:text-white mb-4 transition-colors"
+            >
+              <i class="fas fa-file-medical text-2xl"></i>
+            </div>
+            <h3 class="font-semibold text-sm md:text-base mb-2">
+              Health Certificate
+            </h3>
+            <p class="text-xs md:text-sm opacity-70 leading-relaxed">
+              Setiap hewan mempunyai surat keterangan kesehatan hewan
+            </p>
+          </div>
+          <div
+            class="group bg-orange-50/50 hover:bg-warm-orange hover:text-white rounded-2xl p-6 text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+          >
+            <div
+              class="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-warm-orange/10 text-warm-orange group-hover:bg-white/20 group-hover:text-white mb-4 transition-colors"
+            >
+              <i class="fas fa-star text-2xl"></i>
+            </div>
+            <h3 class="font-semibold text-sm md:text-base mb-2">
+              Sesuai Syariat
+            </h3>
+            <p class="text-xs md:text-sm opacity-70 leading-relaxed">
+              Penyajian makanan dengan kaidah Aman, Sehat, Utuh, Halal
+            </p>
+          </div>
+          <div
+            class="group bg-orange-50/50 hover:bg-warm-orange hover:text-white rounded-2xl p-6 text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+          >
+            <div
+              class="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-warm-orange/10 text-warm-orange group-hover:bg-white/20 group-hover:text-white mb-4 transition-colors"
+            >
+              <i class="fas fa-heart text-2xl"></i>
+            </div>
+            <h3 class="font-semibold text-sm md:text-base mb-2">
+              Hewan Terawat
+            </h3>
+            <p class="text-xs md:text-sm opacity-70 leading-relaxed">
+              Pemeriksaan kesehatan hewan oleh dokter hewan
+            </p>
+          </div>
+          <div
+            class="group bg-orange-50/50 hover:bg-warm-orange hover:text-white rounded-2xl p-6 text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+          >
+            <div
+              class="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-warm-orange/10 text-warm-orange group-hover:bg-white/20 group-hover:text-white mb-4 transition-colors"
+            >
+              <i class="fas fa-thumbs-up text-2xl"></i>
+            </div>
+            <h3 class="font-semibold text-sm md:text-base mb-2">Terpercaya</h3>
+            <p class="text-xs md:text-sm opacity-70 leading-relaxed">
+              Dipercaya sudah 10 tahun oleh ratusan ribu pelanggan
+            </p>
+          </div>
+          <div
+            class="group bg-orange-50/50 hover:bg-warm-orange hover:text-white rounded-2xl p-6 text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+          >
+            <div
+              class="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-warm-orange/10 text-warm-orange group-hover:bg-white/20 group-hover:text-white mb-4 transition-colors"
+            >
+              <i class="fas fa-certificate text-2xl"></i>
+            </div>
+            <h3 class="font-semibold text-sm md:text-base mb-2">Bergaransi</h3>
+            <p class="text-xs md:text-sm opacity-70 leading-relaxed">
+              Kami mengganti produk yang tidak sesuai standar kualitas
+            </p>
+          </div>
+          <div
+            class="group bg-orange-50/50 hover:bg-warm-orange hover:text-white rounded-2xl p-6 text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+          >
+            <div
+              class="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-warm-orange/10 text-warm-orange group-hover:bg-white/20 group-hover:text-white mb-4 transition-colors"
+            >
+              <i class="fas fa-gift text-2xl"></i>
+            </div>
+            <h3 class="font-semibold text-sm md:text-base mb-2">Free Gift</h3>
+            <p class="text-xs md:text-sm opacity-70 leading-relaxed">
+              Hadiah sebagai ungkapan terima kasih atas kepercayaan Anda
+            </p>
+          </div>
+          <div
+            class="group bg-orange-50/50 hover:bg-warm-orange hover:text-white rounded-2xl p-6 text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+          >
+            <div
+              class="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-warm-orange/10 text-warm-orange group-hover:bg-white/20 group-hover:text-white mb-4 transition-colors"
+            >
+              <i class="fas fa-bolt text-2xl"></i>
+            </div>
+            <h3 class="font-semibold text-sm md:text-base mb-2">
+              Layanan Prima
+            </h3>
+            <p class="text-xs md:text-sm opacity-70 leading-relaxed">
+              Layanan cepat, tinggi, dan sesuai standar terbaik
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="layanan" class="section-padding bg-warm-gradient">
+      <div class="container mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-14">
+          <span
+            class="text-warm-orange font-semibold text-sm uppercase tracking-widest"
+            >Layanan</span
+          >
+          <h2 class="font-display text-3xl md:text-4xl font-bold mt-3">
+            Pilihan Paket Kami
+          </h2>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div
+            class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+          >
+            <div class="relative overflow-hidden h-56">
+              <img
+                src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=800&q=80"
+                alt="Paket Aqiqah"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                loading="lazy"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"
+              ></div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-display text-xl font-bold mb-2">Paket Aqiqah</h3>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                Paket lengkap untuk rayakan aqiqah dengan khidmat & praktis.
+              </p>
+              <a
+                href="https://api.whatsapp.com/send?phone=6285606060505&text=Assalamualaikum%20saya%20tertarik%20dengan%20paket%20aqiqah"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-1 text-warm-orange font-semibold text-sm mt-4 hover:underline"
+              >
+                Pesan Sekarang <i class="fas fa-arrow-right text-xs"></i>
+              </a>
+            </div>
+          </div>
+          <div
+            class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+          >
+            <div class="relative overflow-hidden h-56">
+              <img
+                src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&q=80"
+                alt="Menu Sharing"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                loading="lazy"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"
+              ></div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-display text-xl font-bold mb-2">Menu Sharing</h3>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                Menyajikan hidangan pilihan yang disiapkan oleh tim ahli kuliner
+                kami.
+              </p>
+              <a
+                href="https://api.whatsapp.com/send?phone=6285606060505&text=Assalamualaikum%20saya%20tertarik%20dengan%20menu%20sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-1 text-warm-orange font-semibold text-sm mt-4 hover:underline"
+              >
+                Pesan Sekarang <i class="fas fa-arrow-right text-xs"></i>
+              </a>
+            </div>
+          </div>
+          <div
+            class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+          >
+            <div class="relative overflow-hidden h-56">
+              <img
+                src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=800&q=80"
+                alt="Snack & Dessert"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                loading="lazy"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"
+              ></div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-display text-xl font-bold mb-2">
+                Snack & Dessert
+              </h3>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                Nikmati berbagai pilihan mulai dari kue hingga makanan ringan.
+              </p>
+              <a
+                href="https://api.whatsapp.com/send?phone=6285606060505&text=Assalamualaikum%20saya%20tertarik%20dengan%20snack%20dessert"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-1 text-warm-orange font-semibold text-sm mt-4 hover:underline"
+              >
+                Pesan Sekarang <i class="fas fa-arrow-right text-xs"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="section-padding bg-white">
+      <div class="container mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-14">
+          <span
+            class="text-warm-orange font-semibold text-sm uppercase tracking-widest"
+            >Menu</span
+          >
+          <h2 class="font-display text-3xl md:text-4xl font-bold mt-3">
+            Menu Pelangi Aqiqah
+          </h2>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div
+            class="group relative rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=800&q=80"
+              alt="Domba Guling"
+              class="w-full aspect-square object-cover group-hover:scale-110 transition-transform duration-500"
+              loading="lazy"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"
+            ></div>
+            <div class="absolute bottom-0 left-0 right-0 p-4">
+              <h3 class="font-display text-lg font-bold text-white">
+                Domba Guling
+              </h3>
+            </div>
+          </div>
+          <div
+            class="group relative rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1545247181-516773cae754?w=800&q=80"
+              alt="Tongseng"
+              class="w-full aspect-square object-cover group-hover:scale-110 transition-transform duration-500"
+              loading="lazy"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"
+            ></div>
+            <div class="absolute bottom-0 left-0 right-0 p-4">
+              <h3 class="font-display text-lg font-bold text-white">
+                Tongseng
+              </h3>
+            </div>
+          </div>
+          <div
+            class="group relative rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=800&q=80"
+              alt="Gulai"
+              class="w-full aspect-square object-cover group-hover:scale-110 transition-transform duration-500"
+              loading="lazy"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"
+            ></div>
+            <div class="absolute bottom-0 left-0 right-0 p-4">
+              <h3 class="font-display text-lg font-bold text-white">Gulai</h3>
+            </div>
+          </div>
+          <div
+            class="group relative rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1529563021893-cc83c992d75d?w=800&q=80"
+              alt="Sate Goreng"
+              class="w-full aspect-square object-cover group-hover:scale-110 transition-transform duration-500"
+              loading="lazy"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"
+            ></div>
+            <div class="absolute bottom-0 left-0 right-0 p-4">
+              <h3 class="font-display text-lg font-bold text-white">
+                Sate Goreng
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Advantages Section -->
+    <section class="section-padding bg-warm-orange text-white">
+      <div class="container mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-14">
+          <span
+            class="text-white/70 font-semibold text-sm uppercase tracking-widest"
+            >Keunggulan</span
+          >
+          <h2 class="font-display text-3xl md:text-4xl font-bold mt-3">
+            Keunggulan Pelangi Aqiqah
+          </h2>
+          <p class="text-white/70 mt-4">
+            Pelangi Aqiqah memiliki keunggulan yang mungkin tidak anda temukan
+            di tempat lain.
+          </p>
+        </div>
+        <div class="grid md:grid-cols-4 gap-6">
+          <div
+            class="bg-white/10 backdrop-blur rounded-2xl p-6 text-center hover:bg-white/20 transition-colors"
+          >
+            <div
+              class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-white/10 mb-4"
+            >
+              <i class="fas fa-shield-alt text-3xl"></i>
+            </div>
+            <h3 class="font-bold text-base mb-2">Sertifikasi Lengkap</h3>
+            <p class="text-sm text-white/70 leading-relaxed">
+              Layanan aqiqah kami dilengkapi dengan sertifikasi resmi, menjamin
+              kehalalan dan kebersihan setiap hidangan.
+            </p>
+          </div>
+          <div
+            class="bg-white/10 backdrop-blur rounded-2xl p-6 text-center hover:bg-white/20 transition-colors"
+          >
+            <div
+              class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-white/10 mb-4"
+            >
+              <i class="fas fa-flask text-3xl"></i>
+            </div>
+            <h3 class="font-bold text-base mb-2">Dapur Higienis</h3>
+            <p class="text-sm text-white/70 leading-relaxed">
+              Dapur kami mematuhi standar higienis tertinggi, setiap hidangan
+              disiapkan dengan kebersihan dan kualitas terjaga.
+            </p>
+          </div>
+          <div
+            class="bg-white/10 backdrop-blur rounded-2xl p-6 text-center hover:bg-white/20 transition-colors"
+          >
+            <div
+              class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-white/10 mb-4"
+            >
+              <i class="fas fa-list text-3xl"></i>
+            </div>
+            <h3 class="font-bold text-base mb-2">Menu Terlengkap</h3>
+            <p class="text-sm text-white/70 leading-relaxed">
+              Pilih dari beragam menu aqiqah yang lengkap dan variatif, sesuai
+              dengan selera dan kebutuhan Anda.
+            </p>
+          </div>
+          <div
+            class="bg-white/10 backdrop-blur rounded-2xl p-6 text-center hover:bg-white/20 transition-colors"
+          >
+            <div
+              class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-white/10 mb-4"
+            >
+              <i class="fas fa-truck text-3xl"></i>
+            </div>
+            <h3 class="font-bold text-base mb-2">Gratis Ongkir Jabodetabek</h3>
+            <p class="text-sm text-white/70 leading-relaxed">
+              Khusus area Jabodetabek, nikmati gratis ongkos kirim untuk setiap
+              pesanan aqiqah.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div class="text-center">
+            <p
+              class="font-display text-4xl md:text-5xl font-bold text-warm-orange"
+            >
+              10+
+            </p>
+            <p class="text-gray-600 text-sm mt-2">Tahun Melayani</p>
+          </div>
+          <div class="text-center">
+            <p
+              class="font-display text-4xl md:text-5xl font-bold text-warm-orange"
+            >
+              4,381+
+            </p>
+            <p class="text-gray-600 text-sm mt-2">Konsumen Kami</p>
+          </div>
+          <div class="text-center">
+            <p
+              class="font-display text-4xl md:text-5xl font-bold text-warm-orange"
+            >
+              6+
+            </p>
+            <p class="text-gray-600 text-sm mt-2">Kunjungan Perhari</p>
+          </div>
+          <div class="text-center">
+            <p
+              class="font-display text-4xl md:text-5xl font-bold text-warm-orange"
+            >
+              43+
+            </p>
+            <p class="text-gray-600 text-sm mt-2">Test Food</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimoni" class="section-padding bg-warm-gradient">
+      <div class="container mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-14">
+          <span
+            class="text-warm-orange font-semibold text-sm uppercase tracking-widest"
+            >Testimoni</span
+          >
+          <h2 class="font-display text-3xl md:text-4xl font-bold mt-3">
+            Apa Kata Pelanggan Kami
+          </h2>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div
+            class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-shadow relative"
+          >
+            <i
+              class="fas fa-quote-right text-3xl text-warm-orange/20 absolute top-6 right-6"
+            ></i>
+            <p class="text-gray-600 leading-relaxed mb-6 italic">
+              "Terima kasih untuk Pelangi Aqiqah proses aqiqah anak kami sudah
+              berjalan dengan baik dan lancar.. makanannya enak banget."
+            </p>
+            <div>
+              <p class="font-bold">Aldi Bragi & Ririn Dwi Ariyanti</p>
+              <p class="text-sm text-warm-orange">Artist</p>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-shadow relative"
+          >
+            <i
+              class="fas fa-quote-right text-3xl text-warm-orange/20 absolute top-6 right-6"
+            ></i>
+            <p class="text-gray-600 leading-relaxed mb-6 italic">
+              "Pelangi Aqiqah jasanya profesional banget, karena kita engga
+              dibikin capek, kita tinggal duduk beres di rumah, cateringnya juga
+              enak banget."
+            </p>
+            <div>
+              <p class="font-bold">Fairuz A. Rafiq & Sonny Septian</p>
+              <p class="text-sm text-warm-orange">Artist</p>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-shadow relative"
+          >
+            <i
+              class="fas fa-quote-right text-3xl text-warm-orange/20 absolute top-6 right-6"
+            ></i>
+            <p class="text-gray-600 leading-relaxed mb-6 italic">
+              "Pelayanan sangat memuaskan, makanan enak, packaging rapi.
+              Recommended banget untuk yang mau aqiqah!"
+            </p>
+            <div>
+              <p class="font-bold">Bunda Aisha</p>
+              <p class="text-sm text-warm-orange">Pelanggan Setia</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="kontak" class="bg-warm-brown text-white">
+      <div class="container mx-auto px-4 py-16">
+        <div class="grid md:grid-cols-4 gap-10">
+          <div class="md:col-span-1 space-y-4">
+            <h3 class="font-display text-xl font-bold flex items-center gap-2">
+              <i class="fas fa-cloud-sun"></i> Pelangi Aqiqah
+            </h3>
+            <p class="text-white/70 text-sm leading-relaxed">
+              Jasa Katering Aqiqah dan Event Muslim dengan menu terlengkap di
+              Kota Bogor.
+            </p>
+            <div class="flex gap-3">
+              <a
+                href="https://www.instagram.com/pelangiaqiqah/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-warm-orange transition-colors"
+                aria-label="Instagram"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UCgtIslZFMNdl8iqR_DdTE6Q"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-warm-orange transition-colors"
+                aria-label="YouTube"
+              >
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h4 class="font-bold text-base mb-4">Produk</h4>
+            <ul class="space-y-2.5 text-sm text-white/70">
+              <li>
+                <a
+                  href="#layanan"
+                  class="hover:text-warm-orange transition-colors"
+                  >Paket Aqiqah</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#layanan"
+                  class="hover:text-warm-orange transition-colors"
+                  >Menu Sharing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#layanan"
+                  class="hover:text-warm-orange transition-colors"
+                  >Snack & Dessert</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#layanan"
+                  class="hover:text-warm-orange transition-colors"
+                  >Decoration</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#layanan"
+                  class="hover:text-warm-orange transition-colors"
+                  >Hampers</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold text-base mb-4">Informasi</h4>
+            <ul class="space-y-2.5 text-sm text-white/70">
+              <li>
+                <span class="font-semibold text-white/90">WhatsApp:</span
+                ><br />0856-0606-0505 (Asiah)
+              </li>
+              <li>
+                <span class="font-semibold text-white/90">Email:</span
+                ><br />pelangiaqiqah@gmail.com
+              </li>
+              <li>
+                <span class="font-semibold text-white/90">Office Hour:</span
+                ><br />Senin-Minggu (08.00 – 17.00)
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold text-base mb-4">Alamat</h4>
+            <p class="text-sm text-white/70 leading-relaxed">
+              Komplek Ruko Cimanggu Grande, RT.03/RW.15, Kedung Waringin, Tanah
+              Sereal, Kota Bogor, Jawa Barat 16164
+            </p>
+            <a
+              href="https://goo.gl/maps/e7jzzrqid1jmEhwp9"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-1 text-warm-orange text-sm font-semibold mt-3 hover:underline"
+            >
+              Buka di Google Maps
+              <i class="fas fa-external-link-alt text-xs"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-white/10 py-5">
+        <p class="text-center text-sm text-white/50">
+          © 2024 Pelangi Aqiqah. Seluruh hak cipta dilindungi.
+        </p>
+      </div>
+    </footer>
+
+    <!-- WhatsApp FAB -->
+    <a
+      href="https://api.whatsapp.com/send?phone=6285606060505&text=Assalamualaikum%20Saya%20dapat%20info%20dari%20Website%20pelangiaqiqah"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-green-500 text-white flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
+      aria-label="Chat WhatsApp"
+    >
+      <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById('mobile-menu');
+        const icon = document.getElementById('menu-icon');
+        menu.classList.toggle('hidden');
+        if (menu.classList.contains('hidden')) {
+          icon.className = 'fas fa-bars text-xl';
+        } else {
+          icon.className = 'fas fa-times text-xl';
+        }
+      }
+
+      // Smooth scroll
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) target.scrollIntoView({ behavior: 'smooth' });
+        });
+      });
+    </script>
+  </body>
+</html>
